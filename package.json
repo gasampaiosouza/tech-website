@@ -9,6 +9,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-react": "^7.20.3",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
