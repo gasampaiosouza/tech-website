@@ -2,7 +2,7 @@
 
 .container {
 	padding: 75px 0;
-	@include flex(space-around, $direction: column);
+	@include flex(space-around);
 	background: #fafafa;
 	background-image: url('../../assets/bg.svg');
 	background-image: repeating-linear-gradient(
