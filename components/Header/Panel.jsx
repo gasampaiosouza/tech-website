@@ -23,19 +23,19 @@ const RightNav = () => {
 				}`}
 			>
 				<a href="#">
-					<li>Início</li>
+					<li>Home</li>
 				</a>
 				<a href="#">
-					<li>Serviços</li>
+					<li>Services</li>
 				</a>
 				<a href="#">
-					<li>Equipamentos</li>
+					<li>Equipments</li>
 				</a>
 				<a href="#">
-					<li>Contato</li>
+					<li>Contact</li>
 				</a>
 				<a href="#">
-					<li>Horários</li>
+					<li>Opening hours</li>
 				</a>
 			</ul>
 		</>
