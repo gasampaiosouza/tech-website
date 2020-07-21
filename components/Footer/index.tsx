@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
 				</Fade>
 			</div>
 
-			<Fade right>
+			<Fade top>
 				<p className={style.copyright}>©2020 Copyright: Company.com</p>
 			</Fade>
 		</footer>
