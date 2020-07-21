@@ -9,7 +9,7 @@
 	border-bottom: $default-border;
 	@include shadow($quantity: 0.1);
 
-	@include flex(space-between);
+	@include flex(space-between, $direction: row);
 	padding: $default-spacing;
 
 	> ul {
