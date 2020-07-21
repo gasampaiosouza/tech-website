@@ -1,0 +1,50 @@
+$black: #264653;
+$main: #29c5ec;
+$desc-text: #264653;
+
+$default-spacing: 25px;
+
+$default-border: 1px solid #ccc;
+$border-radius: 2.5px;
+
+@mixin title($mobile: false) {
+	font-size: 1.7em;
+	color: $black;
+	letter-spacing: 0.75px;
+	font-weight: 900;
+	margin-bottom: 25px;
+
+	@if $mobile {
+		font-size: 1.5em;
+		margin-bottom: 15px;
+	}
+}
+
+@mixin button() {
+	cursor: pointer;
+	background: $main;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 0.35px;
+	border-radius: $border-radius;
+
+	box-shadow: 5px 5px 15px rgba($main, 0.5);
+
+	padding: 10px 40px;
+	transition: background 0.15s ease-in-out;
+
+	&:hover {
+		background: lighten($main, 10);
+	}
+}
+
+@mixin shadow($color: $black, $quantity: 0.5) {
+	box-shadow: 5px 5px 15px rgba($color, $quantity);
+}
+
+@mixin flex($justify: center, $align: center, $direction: row) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
