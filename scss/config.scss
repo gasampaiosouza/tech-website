@@ -38,7 +38,6 @@ $border-radius: 2.5px;
 
 @mixin icon($size, $margin: true) {
 	width: $size;
-	height: $size;
 	background-size: cover;
 
 	@if $margin {
