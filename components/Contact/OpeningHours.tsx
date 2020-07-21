@@ -1,4 +1,5 @@
 import style from './style.module.scss';
+import Fade from 'react-reveal/Fade';
 
 const Contact: React.FC = () => {
 	const days = [
@@ -13,15 +14,17 @@ const Contact: React.FC = () => {
 	];
 
 	return (
-		<div className={style.opening}>
-			<p className={style.title}>Our opening hours:</p>
-			{days.map((item) => (
-				<div className={style['opening-box']}>
-					<h2 className={style['opening-box-title']}>{item.day}</h2>
-					<p>{item.time}</p>
-				</div>
-			))}
-		</div>
+		<Fade left cascade>
+			<div className={style.opening}>
+				<p className={style.title}>Our opening hours:</p>
+				{days.map((item) => (
+					<div className={style['opening-box']}>
+						<h2 className={style['opening-box-title']}>{item.day}</h2>
+						<p>{item.time}</p>
+					</div>
+				))}
+			</div>
+		</Fade>
 	);
 };
 
