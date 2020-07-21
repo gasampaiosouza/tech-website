@@ -1,4 +1,5 @@
 @import '../../scss/config.scss';
+@import '../../scss/animation.scss';
 
 .header {
 	z-index: 9;
@@ -12,10 +13,18 @@
 	@include flex(space-between, $direction: row);
 	padding: $default-spacing;
 
+	h1 {
+		animation: l-r 1s ease-in-out;
+	}
+
 	> ul {
 		font-size: 0.9em;
 		display: flex;
 		flex-flow: row nowrap;
+
+		a {
+			@include addAnimation(&, t-b, 5);
+		}
 
 		li {
 			padding: 20px $default-spacing;
