@@ -11,7 +11,7 @@
 	@include shadow($quantity: 0.1);
 
 	@include flex(space-between, $direction: row);
-	padding: $default-spacing;
+	padding: 25px $default-spacing;
 
 	h1 {
 		animation: l-r 1s ease-in-out;
