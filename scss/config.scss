@@ -73,7 +73,7 @@ $border-radius: 2.5px;
 	box-shadow: 5px 5px 15px rgba($color, $quantity);
 }
 
-@mixin flex($justify: center, $align: center, $direction: row) {
+@mixin flex($justify: center, $align: center, $direction: column) {
 	display: flex;
 	justify-content: $justify;
 	align-items: $align;
