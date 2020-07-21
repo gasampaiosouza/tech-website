@@ -10,12 +10,12 @@ const Equipments: React.FC = () => {
 			/>
 
 			<div className={style.content}>
-				<h1 className="title">Nossos equipamentos</h1>
+				<h1 className="title">Our equipments</h1>
 
 				<p className={`description ${style.description}`}>
-					Trabalhamos com todos os tipos de equipamentos, incluindo os mais
-					modernos! Como <span>desktop</span>, <span>notebooks</span>,{' '}
-					<span>impressoras</span> e <span>video-games</span>!
+					We work with any type of equipment, including the modern ones! Like
+					<span>desktop</span>, <span>notebooks</span>, <span>printers</span>{' '}
+					and <span>video-games</span>!
 				</p>
 			</div>
 		</div>
