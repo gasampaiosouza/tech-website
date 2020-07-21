@@ -111,7 +111,7 @@
 		}
 
 		> .data {
-			margin-left: $default-spacing;
+			margin-left: 25px;
 			font-weight: 500;
 		}
 	}
@@ -125,7 +125,7 @@
 	&-box {
 		user-select: none;
 		margin: 10px 0;
-		padding: 8px $default-spacing;
+		padding: 8px 25px;
 		border: $default-border;
 		// width: 375px;
 		max-width: 325px;
@@ -168,5 +168,9 @@
 
 	.form-name > input.input {
 		font-size: 0.95em;
+	}
+
+	.opening-box {
+		max-width: 350px;
 	}
 }
