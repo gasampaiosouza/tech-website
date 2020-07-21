@@ -22,19 +22,19 @@ const Footer: React.FC = () => {
 				</Fade>
 				<ul>
 					<Fade bottom cascade>
-						<a href="#">
+						<a href="#home">
 							<li>Home</li>
 						</a>
-						<a href="#">
+						<a href="#services">
 							<li>Services</li>
 						</a>
-						<a href="#">
+						<a href="#equipments">
 							<li>Equipments</li>
 						</a>
-						<a href="#">
+						<a href="#contact">
 							<li>Opening hours</li>
 						</a>
-						<a href="#">
+						<a href="#contact">
 							<li>Contact</li>
 						</a>
 					</Fade>
