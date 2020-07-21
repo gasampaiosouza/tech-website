@@ -26,9 +26,8 @@ a:link {
 body {
 	color: $black;
 	font-size: 18px;
-	font-family: Fira Sans, Arial, sans-serif;
+	font-family: $font-family;
 	overflow-x: hidden;
-	// font-family: Inter, Arial, sans-serif;
 }
 
 button,
@@ -39,8 +38,7 @@ input::placeholder {
 	outline: none;
 	border: none;
 
-	font-family: Fira Sans, Arial, sans-serif;
-	// font-family: Inter, Arial, sans-serif;
+	font-family: $font-family;
 }
 
 ul {
