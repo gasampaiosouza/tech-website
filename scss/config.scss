@@ -3,13 +3,12 @@ $main: #29c5ec;
 $desc-text: #264653;
 
 $default-spacing: 25px;
-
 $default-border: 1px solid #ccc;
+
 $border-radius: 2.5px;
 
 @mixin title($mobile: false) {
 	font-size: 1.7em;
-	color: $black;
 	letter-spacing: 0.75px;
 	font-weight: 900;
 	margin-bottom: 25px;
@@ -20,7 +19,34 @@ $border-radius: 2.5px;
 	}
 }
 
-@mixin button() {
+@mixin description($mobile: false, $align: center) {
+	text-align: $align;
+	opacity: 0.85;
+	font-size: 1em;
+	line-height: 33px;
+	max-width: 500px;
+
+	> span {
+		color: $main;
+	}
+
+	@if $mobile {
+		font-size: 0.9em;
+		margin: 0 $default-spacing;
+	}
+}
+
+@mixin icon($size, $margin: true) {
+	width: $size;
+	height: $size;
+	background-size: cover;
+
+	@if $margin {
+		margin-bottom: 75px;
+	}
+}
+
+@mixin button($mobile: false) {
 	cursor: pointer;
 	background: $main;
 	color: #fff;
@@ -32,6 +58,12 @@ $border-radius: 2.5px;
 
 	padding: 10px 40px;
 	transition: background 0.15s ease-in-out;
+
+	font-size: 1em;
+
+	@if $mobile {
+		font-size: 0.85em;
+	}
 
 	&:hover {
 		background: lighten($main, 10);
