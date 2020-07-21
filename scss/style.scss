@@ -31,6 +31,14 @@ input {
 
 /* default classes */
 
+.title {
+	@include title(true);
+}
+
+.description {
+	@include description(true);
+}
+
 .logo {
 	user-select: none;
 	@include title(true);
@@ -42,7 +50,11 @@ input {
 }
 
 .btn {
-	@include button();
+	@include button(true);
+}
+
+.icon {
+	@include icon(250px);
 }
 
 /* end default classes */
@@ -52,6 +64,22 @@ input {
 	.logo {
 		@include title(false);
 		margin: 0;
+	}
+
+	.icon {
+		@include icon(300px, false);
+	}
+
+	.title {
+		@include title(false);
+	}
+
+	.btn {
+		@include button(false);
+	}
+
+	.description {
+		@include description(false);
 	}
 
 	.burger {
