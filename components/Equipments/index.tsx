@@ -1,5 +1,4 @@
 import style from './style.module.scss';
-// https://imgur.com/a/6aIdKV0
 
 const Equipments: React.FC = () => {
 	return (
