@@ -1,5 +1,89 @@
 @import '../../scss/config.scss';
 
 .container {
+	position: relative;
+	padding: 75px $default-spacing;
 	background: $black;
+	color: #fff;
+
+	.title {
+		position: relative;
+		margin-bottom: $default-spacing + ($default-spacing / 2);
+		font-weight: 500;
+		font-size: 1.5em;
+
+		&.logo {
+			font-size: 1.75em;
+			font-weight: 900;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -12px;
+			left: 0;
+			background: $main;
+			width: 80px;
+			height: 5px;
+			border-radius: 50px;
+		}
+	}
+
+	.section {
+		margin-bottom: $default-spacing * 2;
+	}
+
+	.footer-company {
+		> .description {
+			font-weight: 300;
+			text-align: left;
+			margin: 0;
+		}
+	}
+
+	.footer-links ul {
+		li {
+			margin: $default-spacing 0;
+		}
+	}
+
+	.footer-contact {
+		li {
+			margin: $default-spacing 0;
+			display: flex;
+
+			.icon {
+				width: 20px;
+				height: 20px;
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.copyright {
+		opacity: 0.75;
+		text-align: center;
+		margin-top: $default-spacing * 2;
+	}
+}
+
+@media (min-width: 900px) {
+	.container {
+		display: flex;
+		justify-content: space-between;
+
+		.section {
+			margin: 0 $default-spacing * 2;
+
+			&:nth-child(1) {
+				margin: 0;
+			}
+		}
+	}
+
+	.copyright {
+		position: absolute;
+		left: $default-spacing;
+		bottom: $default-spacing * 2;
+	}
 }
