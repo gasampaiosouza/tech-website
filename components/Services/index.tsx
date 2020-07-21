@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 const Services: React.FC = () => {
 	return (
-		<div className={style.container}>
+		<div className={style.container} id="services">
 			<Fade left>
 				<img
 					src="https://imgur.com/8eYakLA.png"
