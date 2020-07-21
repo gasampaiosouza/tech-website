@@ -9,8 +9,7 @@ const Contact: React.FC = () => {
 
 			<p className={style['message-description']}>
 				You can send us <span>troubles</span> you are having with your
-				electronics,
-				<span>suggestions</span>, <span>criticism</span> or{' '}
+				electronics, <span>suggestions</span>, <span>criticism</span> or{' '}
 				<span>compliments</span>. Feel free to send us any type of message!
 			</p>
 		</div>
