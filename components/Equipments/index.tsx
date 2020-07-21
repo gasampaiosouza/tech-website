@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 const Equipments: React.FC = () => {
 	return (
 		<div className={style.container} id="equipments">
-			<Fade right>
+			<Fade bottom>
 				<img
 					src="https://imgur.com/fgwEyqs.png"
 					className="icon"
@@ -12,7 +12,7 @@ const Equipments: React.FC = () => {
 				/>
 			</Fade>
 
-			<Fade left cascade>
+			<Fade bottom cascade>
 				<div className={style.content}>
 					<h1 className="title">Our equipments</h1>
 

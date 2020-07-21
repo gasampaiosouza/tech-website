@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
 	];
 
 	return (
-		<Fade left cascade>
+		<Fade bottom cascade>
 			<div className={style.opening}>
 				<p className={style.title}>Our opening hours:</p>
 				{days.map((item, i) => (

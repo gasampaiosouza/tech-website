@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
 				<Fade top>
 					<h1 className={`${style.title} ${style.logo} logo`}>Company</h1>
 				</Fade>
-				<Fade left>
+				<Fade right>
 					<p className={`${style.description} description`}>
 						This company is a tech focused company. We can help you with any
 						electronic equipment.
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
 				</Fade>
 			</div>
 
-			<Fade bottom>
+			<Fade right>
 				<p className={style.copyright}>©2020 Copyright: Company.com</p>
 			</Fade>
 		</footer>
