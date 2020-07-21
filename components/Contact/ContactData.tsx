@@ -4,13 +4,13 @@ const Contact: React.FC = () => {
 	return (
 		<div className={style.contact}>
 			<div className={style.email}>
-				<p className={style.title}>Precisa de ajuda?</p>
-				<span className={style.data}>supertechbsb@gmail.com</span>
+				<p className={style.title}>Need help?</p>
+				<span className={style.data}>company@example.com</span>
 			</div>
 
 			<div className={style.phone}>
-				<p className={style.title}>Anote nosso telefone</p>
-				<span className={style.data}>(61) 99591-0125</span>
+				<p className={style.title}>Write down our phone</p>
+				<span className={style.data}>+55 (11) 4002-8922</span>
 			</div>
 		</div>
 	);

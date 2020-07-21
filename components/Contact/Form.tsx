@@ -4,7 +4,7 @@ const Contact: React.FC = () => {
 	return (
 		<form className={style.form}>
 			<div className={style['form-name']}>
-				<label htmlFor="name">Nome</label>
+				<label htmlFor="name">Name</label>
 				<input
 					className={style.input}
 					type="text"
@@ -15,12 +15,12 @@ const Contact: React.FC = () => {
 			</div>
 
 			<textarea
-				placeholder="Envie sua mensagem aqui..."
+				placeholder="Write your message here..."
 				className={style.input}
 				required
 			></textarea>
 
-			<button className="btn">Enviar</button>
+			<button className="btn">Send</button>
 		</form>
 	);
 };

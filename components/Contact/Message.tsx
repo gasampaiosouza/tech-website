@@ -4,13 +4,14 @@ const Contact: React.FC = () => {
 	return (
 		<div className={style.message}>
 			<h1 className={`${style['message-title']} title`}>
-				Entre em contato nos enviando uma <span>mensagem</span>!
+				Be in touch sending us a <span>message</span>!
 			</h1>
 
 			<p className={style['message-description']}>
-				Você pode nos enviar <span>problemas</span> que você tendo com algum de
-				seus eletrônicos, <span>sugestões</span>, <span>críticas</span> ou{' '}
-				<span>elogios</span>. Sinta-se livre para me mandar qualquer mensagem!
+				You can send us <span>troubles</span> you are having with your
+				electronics,
+				<span>suggestions</span>, <span>criticism</span> or{' '}
+				<span>compliments</span>. Feel free to send us any type of message!
 			</p>
 		</div>
 	);

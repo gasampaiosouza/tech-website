@@ -30,7 +30,7 @@
 .form {
 	grid-row: 2;
 	margin: $default-spacing 0;
-	@include flex();
+	text-align: left;
 
 	.input {
 		width: 100%;
@@ -67,16 +67,14 @@
 		min-height: 150px;
 	}
 }
+
 .contact {
 	grid-row: 3;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
 	margin: ($default-spacing * 2) 0;
 
 	.phone,
 	.email {
-		margin: 15px 0;
+		margin: 25px 0;
 
 		> .title {
 			position: relative;
@@ -119,12 +117,17 @@
 }
 
 .opening {
+	.title {
+		margin-bottom: 15px;
+	}
+
 	&-box {
 		user-select: none;
-		margin: 10px 0 0 $default-spacing;
+		margin: 10px 0;
 		padding: 8px $default-spacing;
 		border: $default-border;
-		width: 375px;
+		// width: 375px;
+		max-width: 325px;
 		@include flex(space-between, $direction: row);
 		border-radius: $border-radius;
 
@@ -142,9 +145,7 @@
 
 @media (min-width: 900px) {
 	.content {
-		height: 75vh;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
 
 		.message,
 		.contact,
@@ -155,5 +156,16 @@
 
 	.message-description {
 		@include description(false, left);
+		max-width: none;
+	}
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.form-name > input.input {
+		font-size: 0.95em;
 	}
 }
