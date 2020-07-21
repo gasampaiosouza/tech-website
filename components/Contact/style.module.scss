@@ -8,13 +8,28 @@
 	height: auto;
 	display: grid;
 	justify-content: center;
-	.message {
-		grid-row: 1;
+}
+
+.message {
+	grid-row: 1;
+
+	&-title {
+		line-height: 40px;
+
+		> span {
+			color: $main;
+		}
 	}
 
-	.form {
-		grid-row: 2;
+	&-description {
+		@include description(true, left);
+		margin: 0;
 	}
+}
+
+.form {
+	grid-row: 2;
+	// ...
 }
 
 .contact {
@@ -26,7 +41,36 @@
 		margin: 15px 0;
 
 		> .title {
+			position: relative;
+
 			margin-bottom: 8px;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				left: 5px;
+
+				background: rgba(#ccc, 0.5);
+			}
+
+			$before-height: 15px;
+
+			&:before {
+				bottom: -$before-height - 5px;
+
+				width: 2px;
+				height: $before-height;
+			}
+
+			&:after {
+				$before-width: 10px;
+
+				bottom: -$before-height - 5px;
+
+				width: $before-width;
+				height: 2px;
+			}
 		}
 
 		> .data {
@@ -51,13 +95,11 @@
 	}
 }
 
-/* default classes */
+/* default class */
 .title {
 	font-size: 0.8em;
 	opacity: 0.75;
 }
-
-/* end classes */
 
 @media (min-width: 900px) {
 	.content {
@@ -66,9 +108,13 @@
 		grid-template-rows: 1fr 1fr;
 
 		.message,
-		.contato,
+		.contact,
 		.form {
 			grid-row: initial;
 		}
+	}
+
+	.message-description {
+		@include description(false, left);
 	}
 }
