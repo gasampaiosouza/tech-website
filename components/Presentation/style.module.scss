@@ -1,4 +1,5 @@
 @import '../../scss/config.scss';
+@import '../../scss/animation.scss';
 
 .container {
 	border-bottom: 1px solid #ccc;
@@ -39,7 +40,15 @@
 
 	background-attachment: fixed;
 
+	> h1 {
+		animation: t-b 1s ease-in-out;
+	}
 	> .description {
+		animation: l-r 1s ease-in-out;
 		margin-bottom: 50px;
+	}
+
+	> button {
+		animation: b-t 1s ease-in-out;
 	}
 }
