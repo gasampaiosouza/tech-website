@@ -2,7 +2,7 @@
 
 .container {
 	border-bottom: 1px solid #ccc;
-	@include flex($direction: column);
+	@include flex();
 
 	height: 100vh;
 	background: #fafafa;
