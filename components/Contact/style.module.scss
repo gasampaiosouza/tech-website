@@ -7,6 +7,7 @@
 .content {
 	height: auto;
 	display: grid;
+	gap: 25px;
 	justify-content: center;
 }
 
@@ -29,7 +30,6 @@
 
 .form {
 	grid-row: 2;
-	margin: $default-spacing 0;
 	text-align: center;
 
 	.input {
@@ -71,7 +71,6 @@
 
 .contact {
 	grid-row: 3;
-	margin: ($default-spacing * 2) 0;
 
 	.phone,
 	.email {
@@ -127,8 +126,7 @@
 		margin: 10px 0;
 		padding: 10px 25px;
 		border: $default-border;
-		// width: 375px;
-		max-width: 325px;
+		width: 100%;
 		@include flex(space-between, $direction: row);
 		border-radius: $border-radius;
 
@@ -171,6 +169,6 @@
 	}
 
 	.opening-box {
-		max-width: 350px;
+		max-width: 500px;
 	}
 }
