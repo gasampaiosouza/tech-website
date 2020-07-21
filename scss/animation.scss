@@ -1,0 +1,43 @@
+@keyframes l-r {
+	from {
+		opacity: 0;
+		transform: translateX(-25px);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes r-l {
+	from {
+		opacity: 0;
+		transform: translateX(25px);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes b-t {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes t-b {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
