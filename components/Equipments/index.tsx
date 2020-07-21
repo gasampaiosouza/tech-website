@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 const Equipments: React.FC = () => {
 	return (
-		<div className={style.container}>
+		<div className={style.container} id="equipments">
 			<Fade right>
 				<img
 					src="https://imgur.com/fgwEyqs.png"
