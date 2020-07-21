@@ -4,7 +4,7 @@
 	z-index: 9;
 	position: fixed;
 	background: #fafafa;
-	width: 100%;
+	width: 100vw;
 	max-height: 70px;
 	border-bottom: $default-border;
 	@include shadow($quantity: 0.1);
