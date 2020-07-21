@@ -22,19 +22,19 @@ const RightNav = () => {
 					open ? style.disappear : style.appear
 				}`}
 			>
-				<a href="#">
+				<a href="#home" onClick={() => setOpen(!open)}>
 					<li>Home</li>
 				</a>
-				<a href="#">
+				<a href="#services" onClick={() => setOpen(!open)}>
 					<li>Services</li>
 				</a>
-				<a href="#">
+				<a href="#equipments" onClick={() => setOpen(!open)}>
 					<li>Equipments</li>
 				</a>
-				<a href="#">
+				<a href="#contact" onClick={() => setOpen(!open)}>
 					<li>Contact</li>
 				</a>
-				<a href="#">
+				<a href="#contact" onClick={() => setOpen(!open)}>
 					<li>Opening hours</li>
 				</a>
 			</ul>
