@@ -15,8 +15,8 @@
     "eslint-plugin-react": "^7.20.3",
     "next": "^9.4.4",
     "react": "^16.13.1",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-reveal": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^14.0.14",
