@@ -11,14 +11,14 @@ const Services: React.FC = () => {
 			/>
 
 			<div className={style.content}>
-				<h1 className="title">Os Serviços da SuperTech</h1>
+				<h1 className="title">Company services</h1>
 
 				<p className={`description ${style.description}`}>
-					Nós da SuperTech trabalhamos muito para resolver os variados problemas
-					dos nossos clientes. Como <span>manutenção</span>,{' '}
-					<span>formatação</span> e <span>limpeza</span> do seu eletrônico,
-					fazemos <span>xerox</span>, temos <span>Lan House</span> e verificamos
-					seu <span>SPC / Serasa</span>.
+					We from Company work hard to solve the variety of our customers
+					problems. Like <span>maintence</span>, <span>formatting</span> and{' '}
+					<span>cleaning</span> your <span>electronics</span>, we help you with{' '}
+					<span>xerox</span> and you’re always welcome to our{' '}
+					<span>Lan House</span>!
 				</p>
 			</div>
 		</div>

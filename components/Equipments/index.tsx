@@ -14,7 +14,8 @@ const Equipments: React.FC = () => {
 
 				<p className={`description ${style.description}`}>
 					Trabalhamos com todos os tipos de equipamentos, incluindo os mais
-					modernos! Como desktop, notebooks, impressoras e video-games!
+					modernos! Como <span>desktop</span>, <span>notebooks</span>,{' '}
+					<span>impressoras</span> e <span>video-games</span>!
 				</p>
 			</div>
 		</div>
