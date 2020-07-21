@@ -1,0 +1,59 @@
+@import '../../scss/config.scss';
+
+.container {
+	padding: 75px $default-spacing;
+}
+
+.content {
+	height: auto;
+	display: grid;
+	justify-content: center;
+	.message {
+		grid-row: 1;
+	}
+
+	.contato {
+		grid-row: 3;
+	}
+
+	.form {
+		grid-row: 2;
+	}
+}
+
+.opening {
+	&-box {
+		margin: 10px 0;
+		padding: 8px $default-spacing;
+		border: $default-border;
+		width: 375px;
+		@include flex(space-between);
+		border-radius: $border-radius;
+
+		&-title {
+			font-size: 1em;
+		}
+	}
+}
+
+/* default classes */
+.title {
+	font-size: 0.8em;
+	opacity: 0.75;
+}
+
+/* end classes */
+
+@media (min-width: 900px) {
+	.content {
+		height: 75vh;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+
+		.message,
+		.contato,
+		.form {
+			grid-row: initial;
+		}
+	}
+}
