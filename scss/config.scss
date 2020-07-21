@@ -34,6 +34,10 @@ $border-radius: 2.5px;
 		font-size: 0.9em;
 		margin: 0 $default-spacing;
 	}
+
+	@media (min-width: 900px) {
+		max-width: 500px;
+	}
 }
 
 @mixin icon($size, $margin: true) {
