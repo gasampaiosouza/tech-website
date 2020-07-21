@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
 				<Fade top>
 					<h1 className={`${style.title} ${style.logo} logo`}>Company</h1>
 				</Fade>
-				<Fade right>
+				<Fade bottom>
 					<p className={`${style.description} description`}>
 						This company is a tech focused company. We can help you with any
 						electronic equipment.
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
 				<Fade top>
 					<h1 className={`${style.title}`}>Contact</h1>
 				</Fade>
-				<Fade left cascade>
+				<Fade bottom cascade>
 					<ul>
 						<li>
 							<i className={`fas fa-map-marker-alt ${style.icon}`}></i>

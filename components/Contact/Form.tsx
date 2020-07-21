@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 const Contact: React.FC = () => {
 	return (
-		<Fade left cascade>
+		<Fade bottom cascade>
 			<form className={style.form}>
 				<div className={style['form-name']}>
 					<label htmlFor="name">Name</label>

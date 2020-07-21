@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 const Contact: React.FC = () => {
 	return (
-		<Fade right cascade>
+		<Fade bottom cascade>
 			<div className={style.contact}>
 				<div className={style.email}>
 					<p className={style.title}>Need help?</p>
