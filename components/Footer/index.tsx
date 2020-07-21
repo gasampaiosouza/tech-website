@@ -2,9 +2,9 @@ import style from './style.module.scss';
 
 const Footer: React.FC = () => {
 	return (
-		<div>
+		<footer className={style.container}>
 			<h1>footer</h1>
-		</div>
+		</footer>
 	);
 };
 
