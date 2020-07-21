@@ -2,11 +2,8 @@
 
 .container {
 	padding: 75px 0;
-	@include flex($direction: column);
-
-	> .icon {
-		background-image: url('../../assets/service-icon.svg');
-	}
+	@include flex(space-around, $direction: column);
+	border-bottom: $default-border;
 
 	.content {
 		text-align: center;
