@@ -1,0 +1,15 @@
+@import '../../scss/config.scss';
+
+.container {
+	border-bottom: 1px solid #ccc;
+	@include flex($direction: column);
+
+	height: 100vh;
+	background: #fafafa;
+	background-image: url('../../assets/bg.svg');
+	background-attachment: fixed;
+
+	> .description {
+		margin-bottom: 50px;
+	}
+}
