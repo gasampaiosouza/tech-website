@@ -12,12 +12,27 @@
 		grid-row: 1;
 	}
 
-	.contato {
-		grid-row: 3;
-	}
-
 	.form {
 		grid-row: 2;
+	}
+}
+
+.contact {
+	grid-row: 3;
+	margin: ($default-spacing * 2) 0;
+
+	.phone,
+	.email {
+		margin: 15px 0;
+
+		> .title {
+			margin-bottom: 8px;
+		}
+
+		> .data {
+			margin-left: $default-spacing;
+			font-weight: 500;
+		}
 	}
 }
 
