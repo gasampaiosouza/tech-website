@@ -4,7 +4,7 @@ import Panel from './Panel';
 const Navbar = () => {
 	return (
 		<header className={style.header}>
-			<div className="logo">Company</div>
+			<h1 className="logo">Company</h1>
 			<Panel />
 		</header>
 	);
