@@ -1,9 +1,14 @@
 import style from './style.module.scss';
+// https://imgur.com/a/6aIdKV0
 
 const Services: React.FC = () => {
 	return (
 		<div className={style.container}>
-			<div className={`${style.icon} icon`}></div>
+			<img
+				src="https://imgur.com/8eYakLA.png"
+				className="icon"
+				alt="services"
+			/>
 
 			<div className={style.content}>
 				<h1 className="title">Os Serviços da SuperTech</h1>
