@@ -7,7 +7,7 @@ import Message from './Message';
 
 const Contact: React.FC = () => {
 	return (
-		<section className={style.container}>
+		<section className={style.container} id="contact">
 			<div className={style.content}>
 				<OpeningHours />
 				<Message />
