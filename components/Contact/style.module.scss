@@ -29,11 +29,49 @@
 
 .form {
 	grid-row: 2;
-	// ...
-}
+	margin: $default-spacing 0;
+	@include flex();
 
+	.input {
+		width: 100%;
+		border: $default-border;
+		padding: 15px;
+
+		background: #fafafa;
+		transition: background 0.15s ease-in-out;
+
+		&:valid,
+		&:focus {
+			background: #fff;
+		}
+	}
+
+	&-name {
+		width: 100%;
+		@include flex(0, flex-start);
+
+		> label {
+			margin-bottom: 8px;
+		}
+
+		> input.input {
+			font-size: 0.8em;
+		}
+	}
+
+	textarea.input {
+		line-height: 25px;
+		resize: vertical;
+		margin: $default-spacing 0;
+		max-height: 250px;
+		min-height: 150px;
+	}
+}
 .contact {
 	grid-row: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 	margin: ($default-spacing * 2) 0;
 
 	.phone,
@@ -82,11 +120,12 @@
 
 .opening {
 	&-box {
-		margin: 10px 0;
+		user-select: none;
+		margin: 10px 0 0 $default-spacing;
 		padding: 8px $default-spacing;
 		border: $default-border;
 		width: 375px;
-		@include flex(space-between);
+		@include flex(space-between, $direction: row);
 		border-radius: $border-radius;
 
 		&-title {
