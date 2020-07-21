@@ -17,7 +17,7 @@ const Equipments: React.FC = () => {
 					<h1 className="title">Our equipments</h1>
 
 					<p className={`description ${style.description}`}>
-						We work with any type of equipment, including the modern ones! Like
+						We work with any type of equipment, including the modern ones! Like{' '}
 						<span>desktop</span>, <span>notebooks</span>, <span>printers</span>{' '}
 						and <span>video-games</span>!
 					</p>
