@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
 		<Fade bottom cascade>
 			<div className={style.message}>
 				<h1 className={`${style['message-title']} title`}>
-					Be in touch sending us a <span>message</span>!
+					Be in touch by sending us a <span>message</span>!
 				</h1>
 
 				<p className={style['message-description']}>
