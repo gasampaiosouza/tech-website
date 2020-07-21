@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 const Presentation: React.FC = () => {
 	return (
-		<div className={style.container}>
+		<div className={style.container} id="home">
 			<h1 className="title">Welcome to Company!</h1>
 
 			<p className={`description ${style.description}`}>
