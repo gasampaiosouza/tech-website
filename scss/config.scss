@@ -83,3 +83,15 @@ $border-radius: 2.5px;
 	align-items: $align;
 	flex-direction: $direction;
 }
+
+@mixin addAnimation($element_name, $animation_name, $elements_number) {
+	$counter: 0;
+
+	@for $i from 1 through $elements_number {
+		&:nth-child(#{$i}) {
+			animation: $animation_name #{0.5 + $counter}s ease-in-out;
+		}
+
+		$counter: $counter + 0.15;
+	}
+}
