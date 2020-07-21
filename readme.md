@@ -12,7 +12,7 @@
 
 Design was made from total **zero**, with **Figma**
 
-![First page view](https://imgur.com/eY90TX9.png)
+![First page view](https://imgur.com/u9CDrBH.png)
 
 > If you want to see it more clearly, here's the [Figma link](https://www.figma.com/file/fS8ZaEAAUAWxciOe7CNusb/super-tech).
 
