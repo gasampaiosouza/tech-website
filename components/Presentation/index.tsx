@@ -4,9 +4,7 @@ import Fade from 'react-reveal/Fade';
 const Presentation: React.FC = () => {
 	return (
 		<div className={style.container} id="home">
-			<h1 className="title">
-				Welcome to Com<span>pany</span>!
-			</h1>
+			<h1 className="title">Welcome to Company!</h1>
 
 			<p className={`description ${style.description}`}>
 				Company is a tech company that helps you in a looot of things, like{' '}
