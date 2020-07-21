@@ -2,7 +2,7 @@
 
 .container {
 	padding: 75px 0;
-	@include flex(space-around, $direction: column);
+	@include flex(space-around);
 	border-bottom: $default-border;
 
 	.content {
