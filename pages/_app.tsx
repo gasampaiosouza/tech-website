@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<div>
 			<Head>
-				<title>TechNology</title>
+				<title>Welcome to company!</title>
 
 				{/* font-family */}
 				<link
