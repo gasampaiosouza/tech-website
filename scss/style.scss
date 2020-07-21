@@ -1,0 +1,60 @@
+@import './config.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	color: $black;
+	font-size: 18px;
+	font-family: Fira Sans, Arial, sans-serif;
+	overflow-x: hidden;
+	// font-family: Inter, Arial, sans-serif;
+}
+
+button,
+input {
+	outline: none;
+	border: none;
+
+	font-family: Fira Sans, Arial, sans-serif;
+	// font-family: Inter, Arial, sans-serif;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* default classes */
+
+.logo {
+	user-select: none;
+	@include title(true);
+	margin: 0;
+
+	> span {
+		color: $main;
+	}
+}
+
+.btn {
+	@include button();
+}
+
+/* end default classes */
+
+// desktop
+@media (min-width: 900px) {
+	.logo {
+		@include title(false);
+		margin: 0;
+	}
+
+	.burger {
+		display: none;
+	}
+}
