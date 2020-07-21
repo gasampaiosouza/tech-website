@@ -52,6 +52,13 @@ ul {
 
 /* default classes */
 
+.logo,
+.title {
+	> span {
+		color: $main;
+	}
+}
+
 .title {
 	@include title(true);
 }
@@ -64,10 +71,6 @@ ul {
 	user-select: none;
 	@include title(true);
 	margin: 0;
-
-	> span {
-		color: $main;
-	}
 }
 
 .btn {
