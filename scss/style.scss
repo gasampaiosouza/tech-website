@@ -64,7 +64,7 @@ ul {
 }
 
 .description {
-	@include description(true);
+	@include description(true, left);
 }
 
 .logo {
