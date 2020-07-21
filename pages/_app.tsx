@@ -14,10 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap"
 					rel="stylesheet"
 				/>
-				<script
-					src="https://kit.fontawesome.com/4603725681.js"
-					crossorigin="anonymous"
-				></script>
+				<script src="https://kit.fontawesome.com/4603725681.js"></script>
 			</Head>
 			<Component {...pageProps} />
 		</div>
