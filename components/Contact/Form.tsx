@@ -1,10 +1,16 @@
 import style from './style.module.scss';
 import Fade from 'react-reveal/Fade';
+import { FormEvent } from 'react';
 
 const Contact: React.FC = () => {
+	const submitForm = (event: FormEvent<HTMLFormElement>) => {
+		//...
+		return;
+	};
+
 	return (
 		<Fade bottom cascade>
-			<form className={style.form}>
+			<form className={style.form} onSubmit={(event) => submitForm(event)}>
 				<div className={style['form-name']}>
 					<label htmlFor="name">Name</label>
 					<input
