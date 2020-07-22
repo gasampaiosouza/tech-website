@@ -13,7 +13,9 @@ const Presentation: React.FC = () => {
 				need!
 			</p>
 
-			<button className="btn">I am interested</button>
+			<a href="#contact">
+				<button className="btn">I am interested</button>
+			</a>
 		</div>
 	);
 };
