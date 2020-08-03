@@ -33,6 +33,8 @@ You can easily clone this repository with
 git clone https://github.com/gasampaiosouza/tech-website
 ```
 
+Install all of the dependencies with `npm install` or `yarn`, and start it with `npm run dev` or `yarn dev`
+
 ## 😃 Thank you
 
 That's my project, i hope you liked it, there's a bunch more coming! 💜
